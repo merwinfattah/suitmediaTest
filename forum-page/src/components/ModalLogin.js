@@ -1,7 +1,8 @@
 import React from "react";
+import '../style.css';
 
 
-function Modal({ setOpenModal }) {
+const ModalLogin = ({ setOpenModal }) => {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
@@ -18,7 +19,16 @@ function Modal({ setOpenModal }) {
           <h1>Login</h1>
         </div>
         <div className="body">
-          <p>The next page looks amazing. Hope you want to go there!</p>
+          <form>
+            <label>
+              Email
+            </label>
+            <input type="text"/>
+            <label>
+              Password
+            </label>
+            <input type="text"/>
+          </form>
         </div>
         <div className="footer">
           <button>Login</button>
@@ -28,4 +38,4 @@ function Modal({ setOpenModal }) {
   );
 }
 
-export default Modal;
+export default ModalLogin;

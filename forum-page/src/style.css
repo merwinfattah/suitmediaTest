@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  background-color:  #635C53;
+  color: white;
+}
+
+header h3{
+  margin-left: 200px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav {
+  margin-right: 400px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+header input {
+  margin: 10px 0px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+
+.search-query{
+  background: url(../assets/magnifying-glass-solid.svg) no-repeat right ;
+  padding: 5px;
+  background-color: #EEEEEE;
+}
