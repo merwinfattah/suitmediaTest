@@ -8,12 +8,11 @@ const Navbar  = () => {
     const [openLogin, setOpenLogin] = useState(false);
 
     return(
-            <header>
-                    <h3>Forum Anak IT</h3>
-                    <input type='text' placeholder='Search' className="search-query"/>
                     <nav>
+                        <h3>Forum Anak IT</h3>
+                        <input type='text' placeholder='Search'/>
                         <ul>
-                            <li><button onClick={() => {setOpen(!open)}}>Categories</button></li>
+                            <li><a href="#Categories" onClick={() => {setOpen(!open)}}>Categories</a></li>
                             {open && 
                                 (<div className="dropdown">
                                     <ul>
@@ -25,12 +24,11 @@ const Navbar  = () => {
                                     </ul>
                                 </div>)
                             }
-                            <li><button  onClick={() => {setOpenLogin(true);}}>Login</button></li>
+                            <li><a href="#Login" onClick={() => {setOpenLogin(true);}}>Login</a></li>
                             {openLogin && <ModalLogin setOpenModal={setOpenLogin} />}
-                            <li><button>Register</button></li>
+                            <li><a href="#Register">Register</a></li>
                         </ul>
                     </nav>
-            </header>
     )
 }
 

@@ -5,9 +5,29 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <React.Fragment>
-        <Navbar />
-        <main>
-            <h1> Hello World!</h1>
+        <header>
+          <Navbar />
+        </header>
+        <main className='container'>
+          <section className='content'>
+            <article>
+              <h1>Lampu webcam tiba-tiba menyala sendiri tanpa membuka
+                aplikasi webcam
+              </h1>
+              <p>Mau tanya, akhir-akhir ini webcam sering nyala sendiri. 
+                Apakah ada yang tahu penyebabnya dan solusi mengatasi hal itu? Apakah ada
+                kemungkinan laptop saya di-hack karena kasus terjadi tiap terkoneksi di internet.</p>
+            </article>
+            <div className='comentainer'>
+              <div>
+                Komentar
+              </div>
+              <div className='comentline'></div>
+            </div>
+          </section>
+          <aside className='sidecontent'>
+
+          </aside>
         </main>
     </React.Fragment>
   );
