@@ -69,9 +69,8 @@ nav input {
 .content {
   max-width: 58%;
   padding-left: 16%;
-  border-right: 1px solid;
+  border-right: 2px solid;
   border-color: #EEEEEE;
-  padding-right: 3%;
 }
 
 .sidecontent {
@@ -82,6 +81,10 @@ nav input {
   font-size: 0.78em;
 }
 
+.topic {
+  margin-right: 45px;
+}
+
 .comentainer {
   display: flex;
 }
@@ -89,13 +92,15 @@ nav input {
 .comentitle {
   font-weight: bold;
   width: 15%;
+  margin-right: 10px;
 }
 
 .comentline {
   border: 1px solid;
   border-color: #EEEEEE;
-  height: 1px;
+  height: 0.1px;
   width: 85%;
+  margin-top: 10px;
 }
 
 
