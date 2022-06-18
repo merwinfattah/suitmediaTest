@@ -2,7 +2,16 @@ import './style.css';
 import React from 'react';
 import Navbar from './components/Navbar';
 
+
+async function loadComments() {
+  const response = await fetch("./comments.json");
+  return await response.json();
+}
+
 function App() {
+
+  const comments = loadComments();
+
   return (
     <React.Fragment>
         <header>
@@ -22,7 +31,7 @@ function App() {
             </div>
             <div className='comentainer'>
               <div className='comentitle'>
-                Komentar
+                Komentar {comments}
               </div>
               <div className='comentline'></div>
             </div>
@@ -34,5 +43,7 @@ function App() {
     </React.Fragment>
   );
 }
+
+
 
 export default App;
