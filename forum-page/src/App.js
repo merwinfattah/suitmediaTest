@@ -3,14 +3,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 
 
-async function loadComments() {
-  const response = await fetch("./comments.json");
-  return await response.json();
-}
 
 function App() {
 
-  const comments = loadComments();
 
   return (
     <React.Fragment>
@@ -31,7 +26,7 @@ function App() {
             </div>
             <div className='comentainer'>
               <div className='comentitle'>
-                Komentar {comments}
+                Komentar
               </div>
               <div className='comentline'></div>
             </div>
